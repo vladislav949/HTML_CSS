@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> <!--HTML формы и поля для ввода-->
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Форма №1</p>
+    <!--атрибут action указывает ту страницу на которой и будет происходить
+    обратботка этой формы, method это метод передачи данных из формы-->
+    <form action="" method="post"> <!--тег для создание форм-->
+      <label for="user_name">Введите имя</label> <!-- Создаем подпись
+        для поля-->
+      <input type="text" placeholder="Введите текст" value="текст"
+      maxlength="16" name="user_name" id="user_name"> <!--Максимум 16 символов-->
+      <!--Еще есть такие атрибуты как readonly
+                                       hidden
+                                       disable
+    Указывающие на состояние формы-->
+    </form>
+    <!--Форматы текстовых полей-->
+   <hr>
+
+   <h1>Форматы текстовых полей</h1>
+   <form>
+     <label for="email">Введите email</label>
+     <input type="email" name="email" placeholder="email@gmail.com">
+     <br><br> <!----------------------->
+     <label for="password">Введите пароль</label>
+     <input type="password" name="password" placeholder="password">
+     <br><br> <!----------------------->
+     <label for="url">Введите url</label>
+     <input type="url" name="url" placeholder="url">
+     <br><br> <!------------------------>
+     <label for="color">Цвет</label>
+     <input type="color" name="color">
+     <br><br> <!------------------------>
+     <label for="date">Дата</label>
+     <input type="date" name="date">
+     <br><br> <!------------------------>
+     <label for="time">Время</label>
+     <input type="time" name="time">
+     <br><br> <!------------------------>
+     <label for="datetime">Дата/Время</label>
+     <input type="datetime" name="datetime">
+     <br><br> <!------------------------>
+     <label for="checkbox">checkbox</label>
+     <input type="checkbox" name="checkbox">
+     <br><br> <!------------------------>
+     <label for="radio">Radio</label>
+     <input type="radio" name="radio">
+     <input type="radio" name="radio"> <!--Чтобы выбрать одно значение сделать
+     одинаковый name-->
+     <br><br> <!------------------------>
+
+     <input type="file" name="file"> <!--Загрузка файла на сервер-->
+     <br><br>
+
+     <input type="submit" value="отправить"> <!--перезагрузка страницы с отправкой
+       данных на сервер (кнопка)-->
+       <br><br>
+
+       <input type="reset" value="очистить"> <!--Очищает все заполненые данные
+         в формах-->
+
+   </form>
+   <br><button>Готово</button>
+   <br><br><a href="index.html">На Главную</a>
+  </body>
+</html>
