@@ -1,0 +1,23 @@
+/*Ко всем тегам внутри тега body будет применен стиль color: red*/
+body {
+  color: red;
+}
+.main_text { /*Созданный класс */
+  color: green;
+  }
+/* Идентификаторы # */
+#text-for-test {
+  color: blue;
+  }
+#bold-text-for-test {
+  color: black;
+}
+/* Вложенные селекторы выбора
+div b {
+  color: grey;
+} */
+
+/* <!--выбор нескольких селекторов в теге div--> */
+div b, div i {
+  color: grey;
+}
