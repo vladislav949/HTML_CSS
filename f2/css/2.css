@@ -1,0 +1,40 @@
+.main_link {
+  color: green;
+  text-decoration: underline; /* Подчеркивание */
+}
+
+p.text:empty {  /* Выбрать абзацы класс которых (text)
+  и которые пустые (empty) */
+  color:
+}
+p:first-of-type { /* обращение к первому абзацу p */
+  text-decoration: line-through;
+}
+
+                     /*Псевдоклассы ставатся через одно (:) */
+.main_link:hover {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: red /* цвет линии подчеркивания */
+  cursor: pointer;
+}
+/* (hover) т.е. при наведении на ссылку она становится синей с нижним красным
+подчеркиванием и активным курсором */
+
+.main_link:active { /* Воспроизводится при нажатии */
+  text-decoration: line-through; /*при нажатии текст перечеркивается */
+}
+
+.main_link:visited { /* ссылки по которым уже выполнялся переход */
+  color: grey;
+  }
+input {color: blue} /* пока курсор внутри поля-цвет синий */
+input:focus {color: black} /*если убрать курсор-текст становится черным */
+
+                      /* Псевдоэлементы через два (::) */
+#some_id::after {
+  content: '123'; color: red /* Добавит текст 123 в конец объекта */
+}
+p.main_link::first-letter { /* все первые символы в абзацах будут красными */
+  color: red
+}
