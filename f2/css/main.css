@@ -2,3 +2,6 @@ a:hover {
   color: red;
   text-decoration:overline;
 }
+body {
+  background: #FFA07A;
+}

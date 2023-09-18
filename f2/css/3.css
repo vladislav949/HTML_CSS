@@ -1,0 +1,23 @@
+/* Установка цвета на задний фон объекта
+body {
+  background-color: red;
+}
+либо прописать цвет
+body {
+  background-color: #7f9ab3;
+}
+
+---- Установка картинки на задний фон объекта по url
+body {
+  background-image: url('https://..........')
+}
+*/
+/* body {
+  background-image: url('images/body.jpg');
+  background-repeat: повторение картинки
+  background-position:center;  позиция
+}
+Сокращенная версия:
+body {
+  background: #FFA07A url('') center center hieght: 100vh;
+} */
