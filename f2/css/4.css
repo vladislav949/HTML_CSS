@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+* { /* убрать все отступы на сайте */
+  margin: 0;
+  padding: 0;
+  } /* *- обращение ко всем html объектам
+
+
+/* Подключение шрифтов гугл import */
+body {background: #4314ffb8;}
+.main_text {
+  color: #000000b8; /* Цвет текста */
+  text-align: center; /* Расположение текста */
+  font-size: 28px; /* Размер шрифта (14-default) 2em-будет=28px */
+  font-style: normal; /* Стиль текста */
+  font-weight: 800; /* Насколько жирным будет текст */
+  font-family: 'Fuggles', cursive;  /* Шрифт (подключенный шрифт Fuggles) */
+  text-transform: none; /* В каком регистре будет текст */
+  word-spacing: normal; /* Пространство между словами */
+  letter-spacing: normal; /* Пространство между символами */
+  line-height: normal; /* Расстояние между строками */
+}
+#block {
+  background: red;
+  height: 200px; /* Высота блока */
+  width: 100px; /* Ширина блока */
+  border: 2px solid black; /* Обводка блока */
+  /* border-top -- обводка только сверху
+  border-bottom -- снизу и т.д */
+  border-bottom-style: dotted;
+  border-radius: 15px 30% 20px 25px; /* Скругление углов */
+  opacity: 0.9;  /* Прозрачность 1-дефолт, 0 прозрачный */
+  margin: 20px; /* Внешний отступ, можно применить к любой стороне как border*/
+  padding: 10px; /* Внутренний отступ */
+  display: /* Что из себя будет представлять объект (блок, строчный элемент и тд) */
+}
+
+/* ---------- Позиционирование html объектов -------------------------- */
+.block1 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background: red;
+}
+
+#first {
+  float: left; /* блок будет прижат к левой стороне, так что справа можно добавить еще один */
+}
+
+#second {
+  background: blue;
+  float: left;
+}
+
+#third {
+  float: right;
+  background: green;
+}
