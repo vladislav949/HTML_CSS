@@ -43,3 +43,26 @@ body {
   border-bottom: 0;
   border-top: 4px solid silver;
 }
+
+#nav {
+  list-style: none;
+  text-align: center;
+  display: block;
+  float:left;
+  margin-bottom: 15px;
+}
+
+#nav li {
+  display: block;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#nav li:hover {
+  color: #f7ffbf;
+  background: #333;
+  border-radius: 5px;
+  border-color: #333;
+}

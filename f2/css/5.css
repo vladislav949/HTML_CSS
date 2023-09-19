@@ -3,6 +3,10 @@
   padding: 0;
   }
 
+body {
+  height: 2000px
+}
+
 #link {
   background: red;
   color: #fff;
@@ -43,6 +47,7 @@
   border: 1px solid silver;
   padding: 20px 2.5%;
   float:left;
+  z-index: 0 /* слой 0 */
 }
 
 
@@ -55,4 +60,34 @@
   float:left;
   position: relative; /* позиционирование */
   top: -10px; /* поднять вверх на 10px */
+  z-index: 1 /* слой , т.е. будет выше чем слой 0 */
+}
+
+#nav { /* меню сайта (навигация) */
+  list-style: none; /* нет порядкового номера и разметки списка (кружки и тд.) */
+  display: block;
+  float:left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#nav li {
+  display: inline;; /* каждый элемент в списке будет строчным */
+  background: #fafafa;
+  border: 1px solid silver;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+#nav li:hover {
+  color: #f7ffbf;
+  background: #333;
+  border-radius: 5px;
+  border-color: #333;
+}
+
+#nav li:not(:last-of-type) { /*все кроме последнего */
+  margin-right: 20px;
 }
